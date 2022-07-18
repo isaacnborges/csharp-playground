@@ -1,0 +1,20 @@
+services:
+  desafio-cotacoes:
+    container_name: desafio-cotacoes
+    image: zanfranceschi/desafio-01-cotacoes
+    ports:
+      - 8080:80
+    extra_hosts:
+      - "host.docker.internal:host-gateway"      
+
+  resolucao-cotacoes:
+    container_name: resolucao-cotacoes
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 4000:80
+    depends_on:
+      - desafio-cotacoes
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
