@@ -5,7 +5,11 @@ VisualStudioVersion = 17.0.31808.319
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DesafioPiramide", "DesafioPiramide\DesafioPiramide.csproj", "{BC1CC0F5-CE32-49CA-B279-40627B5DDB59}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsyncIEnumerableExample", "AsyncIEnumerableExample\AsyncIEnumerableExample.csproj", "{C44B880D-53B6-4F43-AE54-D18D8C3251A4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AsyncIEnumerableExample", "AsyncIEnumerableExample\AsyncIEnumerableExample.csproj", "{C44B880D-53B6-4F43-AE54-D18D8C3251A4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StringTests", "StringTests\StringTests.csproj", "{692AA5EA-2CB9-49E1-9062-70742A4C86C5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HackerRank", "HackerRank\HackerRank.csproj", "{155695E0-D226-4D1B-B09B-C1C888BE8235}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +25,14 @@ Global
 		{C44B880D-53B6-4F43-AE54-D18D8C3251A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C44B880D-53B6-4F43-AE54-D18D8C3251A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C44B880D-53B6-4F43-AE54-D18D8C3251A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{692AA5EA-2CB9-49E1-9062-70742A4C86C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{692AA5EA-2CB9-49E1-9062-70742A4C86C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{692AA5EA-2CB9-49E1-9062-70742A4C86C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{692AA5EA-2CB9-49E1-9062-70742A4C86C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{155695E0-D226-4D1B-B09B-C1C888BE8235}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{155695E0-D226-4D1B-B09B-C1C888BE8235}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{155695E0-D226-4D1B-B09B-C1C888BE8235}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{155695E0-D226-4D1B-B09B-C1C888BE8235}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
