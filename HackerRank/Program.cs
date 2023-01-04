@@ -1,4 +1,5 @@
 ﻿#region 2D Array DS
+//https://www.hackerrank.com/challenges/2d-array/
 //class Solution
 //{
 //    public static void Main(string[] args)
@@ -71,6 +72,7 @@
 #endregion
 
 #region Array Left Rotation
+//https://www.hackerrank.com/challenges/ctci-array-left-rotation/problem
 //class Solution
 //{
 //    public static void Main(string[] args)
@@ -122,6 +124,7 @@
 #endregion
 
 #region New Year Chaos
+//https://www.hackerrank.com/challenges/new-year-chaos/problem
 //class Solution
 //{
 //    public static void Main(string[] args)
@@ -191,59 +194,85 @@
 //}
 #endregion
 
-#region balanced-brackets
-class Solution
-{
-    public static void Main(string[] args)
-    {
-        Console.WriteLine("balanced-brackets");
-        Console.WriteLine("Informe as paradas: ");
+#region Balanced-brackets
+//https://www.hackerrank.com/challenges/balanced-brackets/problem
+//class Solution
+//{
+//    public static void Main(string[] args)
+//    {
+//        Console.WriteLine("balanced-brackets");
+//        Console.WriteLine("Informe as paradas: ");
 
-        int t = Convert.ToInt32(Console.ReadLine().Trim());
+//        int t = Convert.ToInt32(Console.ReadLine().Trim());
 
-        for (int tItr = 0; tItr < t; tItr++)
-        {
-            string s = Console.ReadLine();
+//        for (int tItr = 0; tItr < t; tItr++)
+//        {
+//            string s = Console.ReadLine();
 
-            string result = Result.IsBalanced(s);
+//            string result = Result.IsBalanced(s);
 
-            Console.WriteLine(result);
-        }
-    }
-}
+//            Console.WriteLine(result);
+//        }
+//    }
+//}
 
-class Result
-{
-    public static string IsBalanced(string s)
-    {
-        if (s.Length % 2 != 0)
-            return "NO";
+//class Result
+//{
+//    public static string IsBalanced(string s)
+//    {
+//        if (s.Length % 2 != 0)
+//            return "NO";
 
-        if (s[0] == '}' || s[0] == ']' || s[0] == ')')
-            return "NO";
+//        if (s[0] == '}' || s[0] == ']' || s[0] == ')')
+//            return "NO";
 
-        var stack = new Stack<char>();
-        for (int i = 0; i < s.Length; i++)
-        {
-            if (s[i] == '{' || s[i] == '[' || s[i] == '(')
-            {
-                stack.Push(s[i]);
-            }
+//        var stack = new Stack<char>();
+//        for (int i = 0; i < s.Length; i++)
+//        {
+//            if (s[i] == '{' || s[i] == '[' || s[i] == '(')
+//            {
+//                stack.Push(s[i]);
+//            }
 
-            if (stack.Count > 0)
-            {
-                if (s[i] == '}' && stack.Pop() != '{')
-                    return "NO";
+//            if (stack.Count > 0)
+//            {
+//                if (s[i] == '}' && stack.Pop() != '{')
+//                    return "NO";
 
-                if (s[i] == ']' && stack.Pop() != '[')
-                    return "NO";
+//                if (s[i] == ']' && stack.Pop() != '[')
+//                    return "NO";
 
-                if (s[i] == ')' && stack.Pop() != '(')
-                    return "NO";
-            }
-        }
+//                if (s[i] == ')' && stack.Pop() != '(')
+//                    return "NO";
+//            }
+//        }
 
-        return stack.Count > 0 ? "NO" : "YES";
-    }
-}
+//        return stack.Count > 0 ? "NO" : "YES";
+//    }
+//}
+#endregion
+
+#region FizzBuzz problem
+//for (int i = 1; i <= 100; i++)
+//{
+//    if (i % 3 == 0 && i % 5 == 0)
+//    {
+//        Console.WriteLine("FizzBuzz");
+//        continue;
+//    }
+
+//    if (i % 3 == 0)
+//    {
+//        Console.WriteLine("Fizz");
+//        continue;
+//    }
+
+//    if (i % 5 == 0)
+//    {
+//        Console.WriteLine("Buzz");
+//        continue;
+//    }
+
+//    Console.WriteLine(i);
+//}
 #endregion
