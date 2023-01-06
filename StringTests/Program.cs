@@ -1,4 +1,5 @@
-﻿//Example:
+﻿#region AC - array replace element
+//Example:
 //Input = [17, 18, 5, 4, 6, 1]
 //Output = [18, 6, 6, 6, 1, -1]
 
@@ -19,22 +20,36 @@
 //{
 //    Console.WriteLine(item);
 //}
+#endregion
 
+#region palavra invertida
+//Console.WriteLine("Informe uma palavra: ");
+//var word = Console.ReadLine();
 
-Console.WriteLine("Informe uma palavra: ");
-var word = Console.ReadLine();
+//Console.WriteLine("Palavra invertida: " + InvertedWord(word));
+//Console.ReadLine();
+//static string InvertedWord(string word)
+//{
+//    var sb = new System.Text.StringBuilder();
 
-Console.WriteLine("Palavra invertida: " + InvertedWord(word));
-Console.ReadLine();
+//    for (int i = word.Length - 1; i >= 0; i--)
+//    {
+//        sb.Append(word[i]);
+//    }
 
-static string InvertedWord(string word)
+//    return sb.ToString();
+//}
+#endregion
+
+#region fibonacci
+var previusNumber = 0;
+var actualNumber = 1;
+
+for (var i = 0; i < 10; i++)
 {
-    var sb = new System.Text.StringBuilder();
-
-    for (int i = word.Length - 1; i >= 0; i--)
-    {
-        sb.Append(word[i]);
-    }
-
-    return sb.ToString();
+    var number = previusNumber + actualNumber;
+    Console.WriteLine(number);
+    previusNumber = actualNumber;
+    actualNumber = number;
 }
+#endregion
