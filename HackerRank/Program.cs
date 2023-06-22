@@ -1,74 +1,74 @@
 ﻿#region 2D Array DS
 //https://www.hackerrank.com/challenges/2d-array/
-//class Solution
-//{
-//    public static void Main(string[] args)
-//    {
-//        Console.WriteLine("2D Array DS");
-//        Console.WriteLine("Informe as paradas: ");
+class Solution
+{
+    public static void Main(string[] args)
+    {
+        Console.WriteLine("2D Array DS");
+        Console.WriteLine("Informe as paradas: ");
 
-//        List<List<int>> arr = new List<List<int>>();
+        List<List<int>> arr = new List<List<int>>();
 
-//        for (int i = 0; i < 6; i++)
-//        {
-//            arr.Add(Console.ReadLine().TrimEnd().Split(' ').ToList().Select(arrTemp => Convert.ToInt32(arrTemp)).ToList());
-//        }
+        for (int i = 0; i < 6; i++)
+        {
+            arr.Add(Console.ReadLine().TrimEnd().Split(' ').ToList().Select(arrTemp => Convert.ToInt32(arrTemp)).ToList());
+        }
 
-//        int result = Result.HourglassSum(arr);
+        int result = Result.HourglassSum(arr);
 
-//        Console.WriteLine("Resultado: " + result);
-//        Console.ReadLine();
-//    }
-//}
+        Console.WriteLine("Resultado: " + result);
+        Console.ReadLine();
+    }
+}
 
-//class Result
-//{
-////example input
+class Result
+{
+    //example input
 
-////1 1 1 0 0 0
-////0 1 0 0 0 0
-////1 1 1 0 0 0
-////0 0 2 4 4 0
-////0 0 0 2 0 0
-////0 0 1 2 4 0
+    //1 1 1 0 0 0
+    //0 1 0 0 0 0
+    //1 1 1 0 0 0
+    //0 0 2 4 4 0
+    //0 0 0 2 0 0
+    //0 0 1 2 4 0
 
-////1 1 1 0 0 0
-////0 1 0 0 0 0
-////1 1 1 0 0 0
-////0 9 2 -4 -4 0
-////0 0 0 -2 0 0
-////0 0 -1 -2 -4 0
+    //1 1 1 0 0 0
+    //0 1 0 0 0 0
+    //1 1 1 0 0 0
+    //0 9 2 -4 -4 0
+    //0 0 0 -2 0 0
+    //0 0 -1 -2 -4 0
 
-////-9 -9 -9 1 1 1
-////0 -9 0 4 3 2
-////-9 -9 -9 1 2 3
-////0 0 8 6 6 0
-////0 0 0 -2 0 0
-////0 0 1 2 4 0
+    //-9 -9 -9 1 1 1
+    //0 -9 0 4 3 2
+    //-9 -9 -9 1 2 3
+    //0 0 8 6 6 0
+    //0 0 0 -2 0 0
+    //0 0 1 2 4 0
 
-//    public static int HourglassSum(List<List<int>> arr)
-//    {
-//        var totalMax = new List<int>();
+    public static int HourglassSum(List<List<int>> arr)
+    {
+        var totalMax = new List<int>();
 
-//        for (int i = 0; i <= 3; i++)
-//        {
-//            for (int j = 0; j <= 3; j++)
-//            {
-//                var sumOfOneHourglass = arr[i][j] +
-//                                        arr[i][j + 1] +
-//                                        arr[i][j + 2] +
-//                                        arr[i + 1][j + 1] +
-//                                        arr[i + 2][j] +
-//                                        arr[i + 2][j + 1] +
-//                                        arr[i + 2][j + 2];
+        for (int i = 0; i <= 3; i++)
+        {
+            for (int j = 0; j <= 3; j++)
+            {
+                var sumOfOneHourglass = arr[i][j] +
+                                        arr[i][j + 1] +
+                                        arr[i][j + 2] +
+                                        arr[i + 1][j + 1] +
+                                        arr[i + 2][j] +
+                                        arr[i + 2][j + 1] +
+                                        arr[i + 2][j + 2];
 
-//                totalMax.Add(sumOfOneHourglass);
-//            }
-//        }
+                totalMax.Add(sumOfOneHourglass);
+            }
+        }
 
-//        return totalMax.Max();
-//    }
-//}
+        return totalMax.Max();
+    }
+}
 #endregion
 
 #region Array Left Rotation
